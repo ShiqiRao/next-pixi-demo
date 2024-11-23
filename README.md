@@ -16,4 +16,4 @@ bun dev
 ```
 
 ## Reference
-https://pixijs.com/8.x/tutorials/getting-started#1
+https://pixijs.com/8.x/tutorials
