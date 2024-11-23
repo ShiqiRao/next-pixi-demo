@@ -1,6 +1,6 @@
 "use client";
 import { useCallback, useEffect, useRef } from "react";
-import { Assets, Application, Sprite } from "pixi.js";
+import { Assets, Application } from "pixi.js";
 import { SpineBoy } from "./SpineBoy";
 import { Controller } from "./Controller";
 import { Scene } from "./Scene";

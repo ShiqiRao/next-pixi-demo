@@ -1,7 +1,6 @@
 "use client";
 import { useCallback, useEffect, useRef } from "react";
-import { Assets, Application, Sprite, Graphics, Container } from "pixi.js";
-import PixiApp from '@/components/PixiApp';
+import { Application, Graphics, Container } from "pixi.js";
 
 const moonSvgString = `
 <svg width="111" height="126" viewBox="0 0 111 126" fill="none" xmlns="http://www.w3.org/2000/svg">

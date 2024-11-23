@@ -1,5 +1,5 @@
 "use client";
-import { use, useCallback, useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef } from "react";
 import { Assets, Application, Container, Sprite } from "pixi.js";
 
 function addBackground(app) {
@@ -17,8 +17,7 @@ function addBackground(app) {
   background.y = app.screen.height / 2;
 }
 
-function animateFishes(app, fishes, time) {
-  const delta = time.deltaTime;
+function animateFishes(app, fishes) {
 
   const stagePadding = 100;
   const boundWidth = app.screen.width + stagePadding * 2;
@@ -121,7 +120,7 @@ export default function Demo2({}) {
 
     addBackground(app);
     addFishes(app, fishes);
-    app.ticker.add((time) => animateFishes(app, fishes, time));
+    app.ticker.add(() => animateFishes(app, fishes));
     return app;
   }, []);
 
