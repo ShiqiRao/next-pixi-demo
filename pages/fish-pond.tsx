@@ -69,7 +69,7 @@ function addFishes(app, fishes) {
   }
 }
 
-export default function Demo2({}) {
+export default function FishPond({}) {
   const canvasRef = useRef(null);
   const setup = useCallback(async (app, canvas) => {
     await app.init({ background: "#1099bb", canvas, width: 800, height: 600 });

@@ -2,7 +2,7 @@
 import { useCallback, useEffect, useRef } from "react";
 import { Assets, Application, Sprite } from "pixi.js";
 
-export default function Demo1({ width = 800, height = 600 }) {
+export default function Bunny({ width = 800, height = 600 }) {
   const canvasRef = useRef(null);
   const init = useCallback(async () => {
     const canvas = canvasRef.current;

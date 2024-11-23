@@ -1,5 +1,5 @@
-import Demo1 from "./demo1";
+import Bunny from "./bunny";
 
 export default function Page() {
-  return <Demo1/>;
+  return <Bunny/>;
 }
