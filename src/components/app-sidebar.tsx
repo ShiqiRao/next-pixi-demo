@@ -34,8 +34,8 @@ const items = [
     icon: PersonStanding,
   },
   {
-    title: "ShiqiRao@Github",
-    url: "https://github.com/ShiqiRao",
+    title: "Code@Github",
+    url: "https://github.com/ShiqiRao/next-pixi-demo",
     icon: Github,
   },
 ]
