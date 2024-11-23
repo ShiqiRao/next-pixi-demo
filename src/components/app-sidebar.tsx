@@ -1,4 +1,4 @@
-import { Calendar, Home, Inbox, Search, Settings } from "lucide-react"
+import {Rabbit, Fish, TrainTrack, PersonStanding, Github } from "lucide-react"
 
 import {
   Sidebar,
@@ -16,27 +16,27 @@ const items = [
   {
     title: "Bunny",
     url: "/bunny",
-    icon: Home,
+    icon: Rabbit,
   },
   {
     title: "Fish Pond",
     url: "/fish-pond",
-    icon: Inbox,
+    icon: Fish,
   },
   {
     title: "Chocho Train",
     url: "/chocho-train",
-    icon: Calendar,
+    icon: TrainTrack,
   },
   {
     title: "Spine Boy",
     url: "/spine-boy",
-    icon: Search,
+    icon: PersonStanding,
   },
   {
-    title: "Settings",
-    url: "#",
-    icon: Settings,
+    title: "ShiqiRao@Github",
+    url: "https://github.com/ShiqiRao",
+    icon: Github,
   },
 ]
 
