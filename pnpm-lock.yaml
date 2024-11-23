@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@esotericsoftware/spine-pixi-v8':
+        specifier: ~4.2.0
+        version: 4.2.66(pixi.js@8.5.2)
+      '@pixi/spine-pixi':
+        specifier: ^2.1.1
+        version: 2.1.1(pixi.js@8.5.2)
       next:
         specifier: 15.0.3
         version: 15.0.3(react-dom@19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106))(react@19.0.0-rc-66855b96-20241106)
@@ -72,6 +78,14 @@ packages:
   '@eslint/js@8.57.1':
     resolution: {integrity: sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+
+  '@esotericsoftware/spine-core@4.2.66':
+    resolution: {integrity: sha512-B1HLyxn0K0K4PcL+5zYkl2iNVI3qwi0PJvEdTJ9vFHrykNBbQ8m3babUDW5ckD4lLD/qF9XeY/h3FoWGZ1KQLw==}
+
+  '@esotericsoftware/spine-pixi-v8@4.2.66':
+    resolution: {integrity: sha512-rjyI9LXWHJggkZu/GSmI3XyYm+Q6D6fFotWQD943m5mC7L1SFmbh3JctWKoOSyIXTLVtSdnVxH8A5Fm1hdk/gw==}
+    peerDependencies:
+      pixi.js: ^8.4.0
 
   '@humanwhocodes/config-array@0.13.0':
     resolution: {integrity: sha512-DZLEEqFWQFiyK6h5YIeynKx7JlvCYWL0cImfSRXZ9l4Sg2efkFGTuFf6vzXjK1cq6IYkU+Eg/JizXw+TD2vRNw==}
@@ -285,6 +299,11 @@ packages:
 
   '@pixi/colord@2.9.6':
     resolution: {integrity: sha512-nezytU2pw587fQstUu1AsJZDVEynjskwOL+kibwcdxsMBFqPsFFNA7xl0ii/gXuDi6M0xj3mfRJj8pBSc2jCfA==}
+
+  '@pixi/spine-pixi@2.1.1':
+    resolution: {integrity: sha512-4DMKHpBvw1G2+Rm8fv/6p1T8GLKBu/d4yXNHpMNfmOi687OrxzNKviz8uHzB/J5jj9QwKgHy6dWMNKJRYZd5KA==}
+    peerDependencies:
+      pixi.js: ^8.4.0
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -1712,6 +1731,13 @@ snapshots:
 
   '@eslint/js@8.57.1': {}
 
+  '@esotericsoftware/spine-core@4.2.66': {}
+
+  '@esotericsoftware/spine-pixi-v8@4.2.66(pixi.js@8.5.2)':
+    dependencies:
+      '@esotericsoftware/spine-core': 4.2.66
+      pixi.js: 8.5.2
+
   '@humanwhocodes/config-array@0.13.0':
     dependencies:
       '@humanwhocodes/object-schema': 2.0.3
@@ -1870,6 +1896,11 @@ snapshots:
   '@nolyfill/is-core-module@1.0.39': {}
 
   '@pixi/colord@2.9.6': {}
+
+  '@pixi/spine-pixi@2.1.1(pixi.js@8.5.2)':
+    dependencies:
+      '@esotericsoftware/spine-core': 4.2.66
+      pixi.js: 8.5.2
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
